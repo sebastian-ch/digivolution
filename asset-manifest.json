@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/digivolution/static/css/main.91b9bc14.css",
+    "main.js": "/digivolution/static/js/main.afce888b.js",
+    "index.html": "/digivolution/index.html",
+    "main.91b9bc14.css.map": "/digivolution/static/css/main.91b9bc14.css.map",
+    "main.afce888b.js.map": "/digivolution/static/js/main.afce888b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.91b9bc14.css",
+    "static/js/main.afce888b.js"
+  ]
+}
