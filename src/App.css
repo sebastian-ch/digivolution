@@ -1,0 +1,37 @@
+.App {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  flex-direction: row;
+}
+
+.sidebar {
+  width: 30vw;
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: lightblue;
+}
+
+.main {
+  height: 100vh;
+  width: 70vw;
+  background-color: coral;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.list-item {
+  background-color: lightgreen;
+  outline: 1px solid white;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
