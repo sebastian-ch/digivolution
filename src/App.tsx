@@ -53,13 +53,14 @@ function App() {
 
       </Box>
       <Box className='main'>
+        <Box display='flex' justifyContent='center' width='70vw' sx={{ fontWeight: 'bold', position: 'absolute', top: '40px' }}>Select a Digimon to see it's possible evolution paths</Box>
 
 
         {
           selected ?
             <Box display='flex' flexDirection='column' justifyContent='center' alignItems='center'>
 
-              <Box display='flex' width='50vw' justifyContent={selected?.neighBours?.prev.slice(1).length == 1 ? 'center' : 'space-between'} flexDirection='row' sx={{ paddingBottom: '10px' }}>
+              <Box display='flex' width='50vw' justifyContent={selected?.neighBours?.prev.slice(1).length == 1 ? 'center' : 'space-between'} flexDirection='row' sx={{ paddingBottom: '40px' }}>
                 {/* {selected?.neighBours?.prev.slice(1).map((lower: any) => <Box>{digis[lower].name}</Box>)} */}
                 {selected?.neighBours?.prev.slice(1).map((lower: any) => <DigiWrapper digi={digis[lower]} />)}
               </Box>
@@ -70,7 +71,7 @@ function App() {
                 <img height='32px' width='32px' src={selected?.icon} alt='icon' />
                 <Box sx={{ fontWeight: 'bold' }}>{selected?.name}</Box>
               </Box> */}
-              <Box display='flex' width='50vw' justifyContent='space-between' flexDirection='row' sx={{ paddingTop: '10px' }}>
+              <Box display='flex' width='50vw' justifyContent={selected?.neighBours?.next.length == 1 ? 'center' : 'space-between'} flexDirection='row' sx={{ paddingTop: '40px' }}>
                 {selected?.neighBours?.next.map((higher: any) => <DigiWrapper digi={digis[higher]} />)}
               </Box>
             </Box>
